@@ -9,7 +9,15 @@
     <title>KensoQuak &Co.</title>
 </head>
 <body>
- <button class="button-20" role="button">Login</button>
+ <button id="button-20" class="button-20" role="button" onclick="">Login</button>
+ <script type="text/javascript">
+    document.getElementById("button-20").onclick = function () {
+        location.href = "login/index.html";
+    };
+</script>
+
+
+
  <script src="backend/index.js"></script>
 </body>
 </html>
