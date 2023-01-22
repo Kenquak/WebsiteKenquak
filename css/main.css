@@ -1,7 +1,6 @@
 body {
  background-image: url("");
- background-color: #191919;
- min-height: 50vh;
+ background-color: #171717;
 }
 .button-20 {
   appearance: button;
@@ -68,19 +67,17 @@ body {
 
 @media (max-width: 1100px){
      body {
-       height: 100vh;
        overflow: hidden;
 
  }
      .button-20 {
         position: relative;
-        left: 10%; transform: translateX(-70%);
+        left: 7%; transform: translateX(-60%);
         top: 5%; transform: translateY(+5%);
 }
 }
 @media (min-width: 1101px) {
      body {
-      height: 100hv;
       overflow: hidden;
 
      .button-20 {
