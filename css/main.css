@@ -1,5 +1,4 @@
 body {
- background-image: url("");
  background-color: #171717;
 }
 .button-20 {
@@ -27,7 +26,7 @@ body {
   touch-action: manipulation;
   vertical-align: middle;
   position: relative;
-  left: 93%;
+  left: 100%;
   top: 5%; transform: translateY(+100%)
 }
 
@@ -64,6 +63,14 @@ body {
   opacity: .65;
   pointer-events: none;
 }
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50px;
+  background-position: center;
+  position: relative;
+}
 
 @media (max-width: 1100px){
      body {
@@ -79,12 +86,30 @@ body {
 @media (min-width: 1101px) {
      body {
       overflow: hidden;
-
+     }
      .button-20 {
        position: relative;
-       left: 90%; transform: translateX(+70%);
-       top 5%; transform: translateY(-50%);
-     }
+       left: 92%; transform: translateX(-3%),
+       top 5%; transform: translateY(+5%);
+      }
 }
+@media (min-width: 1700px) {
+  body {
+    overflow: hidden;
+  }
+  .button-20 {
+    position:relative;
+    left:95%;
+    top:5%;
+  }
 }
-
+@media(min-width: 2400px) {
+  body {
+    overflow: hidden;
+  }
+  .button-20 {
+    position: relative;
+    left: 96%;
+    top: 5%;
+  }
+}
