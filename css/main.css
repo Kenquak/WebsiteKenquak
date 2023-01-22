@@ -1,8 +1,8 @@
 body {
  background-image: url("");
  background-color: #191919;
+ min-height: 50vh;
 }
-
 .button-20 {
   appearance: button;
   background-color: #4D4AE8;
@@ -11,7 +11,7 @@ body {
   border-radius: 1rem;
   box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
   box-sizing: border-box;
-  color: #blue;
+  color: #babcff;
   cursor: pointer;
   display: inline-block;
   font-family: Inter,sans-serif;
@@ -27,9 +27,9 @@ body {
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-  position: absolute;
-  left: 95%;
-  top: 3%;
+  position: relative;
+  left: 93%;
+  top: 5%; transform: translateY(+100%)
 }
 
 .button-20:focus:not(:focus-visible),
@@ -65,3 +65,29 @@ body {
   opacity: .65;
   pointer-events: none;
 }
+
+@media (max-width: 1100px){
+     body {
+       height: 100vh;
+       overflow: hidden;
+
+ }
+     .button-20 {
+        position: relative;
+        left: 10%; transform: translateX(-70%);
+        top: 5%; transform: translateY(+5%);
+}
+}
+@media (min-width: 1101px) {
+     body {
+      height: 100hv;
+      overflow: hidden;
+
+     .button-20 {
+       position: relative;
+       left: 90%; transform: translateX(+70%);
+       top 5%; transform: translateY(-50%);
+     }
+}
+}
+
