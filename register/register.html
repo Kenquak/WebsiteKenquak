@@ -15,7 +15,10 @@
             <div class="col-md-6 col-lg-4">
                 <div class="login-wrap p-0">
                     <h3 class="mb-4 text-center">Register</h3>
-                    <form action="#pswchecker.js" class="signin-form">
+                    <form target="_blank" action="" class="signin-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" required>
+                        </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Username" required>
                         </div>
@@ -25,7 +28,7 @@
                         </div>
                         <div class="form-group">
                             <input id="repeat-password" type="password" class="form-control" placeholder="Repeat Password" required>
-                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            <span toggle="#repeat-password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="form-control btn btn-primary submit px-3">Register</button>
@@ -47,6 +50,18 @@
                         </div>
                     </form>
  </section>
-<script src="pswchecker.js"></script>
+ <script type="text/javascript">
+    document.getElementById("redirect_register").onclick = function () {
+        "use strict";
+
+        let firstpsw = document.getElementbyId('password-field').value
+        let secondpsw = document.getElementbyId('repeat-password').value
+
+        console.log(firstpsw)
+        console.log(secondpsws)
+    };
+</script>
+
+
  </body>
 </html>
