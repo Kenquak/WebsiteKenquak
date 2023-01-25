@@ -27,8 +27,8 @@
             <i class="fa fa-fw fa-eye field-icon" id="toggle-password"></i>
           </div>
           <div class="form-group">
-            <input id="password-field" type="password" class="form-control" placeholder="Repeat Password" required>
-            <i class="fa fa-fw fa-eye field-icon" id="toggle-password"></i>
+            <input id="psw-field" type="password" class="form-control" placeholder="Repeat Password" required>
+            <i class="fa fa-fw fa-eye field-icon" id="schusch"></i>
           </div>
           <div class="form-group">
               <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
@@ -59,6 +59,17 @@
     this.classList.toggle('fa-eye-slash');
 });
  </script>
+  <script>
+    const togglepassword = document.querySelector('#schusch');
+  const Password = document.querySelector('#psw-field');
+
+  togglepassword.addEventListener('click', function (f) {
+    // toggle the type attribute
+    const type = Password.getAttribute('type') === 'password' ? 'text' : 'password';
+    Password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
  </script>
  </body>
 </html>
