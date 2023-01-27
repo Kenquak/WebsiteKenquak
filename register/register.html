@@ -23,11 +23,11 @@
                     <input type="text" class="form-control" placeholder="Username" required>
                 </div>
           <div class="form-group">
-            <input id="password-field" type="password" style="margin-top: 15px;" class="form-control" placeholder="Password" required>
+              <input name="password" id="password-field" type="password" style="margin-top: 15px;" class="form-control" onchange="onChange()" placeholder="Password" required>
             <i class="fa fa-fw fa-eye field-icon" id="toggle-password"></i>
           </div>
           <div class="form-group">
-            <input id="psw-field" type="password" class="form-control" placeholder="Repeat Password" required>
+              <input name="password-repeat" id="psw-field" type="password" class="form-control" onchange="onChange()" placeholder="Repeat Password" required>
             <i class="fa fa-fw fa-eye field-icon" id="schusch"></i>
           </div>
           <div class="form-group">
@@ -73,7 +73,15 @@
  </script>
 
 <script>
-    const
+    function onChange() {
+      const password = document.querySelector('input[name=password]');
+      const confirm = document.querySelector('input[name=password-repeat]');
+       if (confirm.value === password.value) {
+        confirm.setCustomValidity('');
+    } else {
+      confirm.setCustomValidity('Passwords do not match');
+  }
+}
 </script>
  </body>
 </html>
