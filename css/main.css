@@ -1,6 +1,6 @@
 body {
   background-color: #171717;
-  overflow:auto;
+  overflow: hidden;
  }
  .button-20 {
    appearance: button;
@@ -30,34 +30,34 @@ body {
    left: 100%;
    top: 5%; transform: translateY(+100%)
  }
- 
+
  .button-20:focus:not(:focus-visible),
  .button-20:focus {
    outline: 0;
  }
- 
+
  .button-20:hover {
    background-color: #3733E5;
    border-color: #3733E5;
  }
- 
+
  .button-20:focus {
    background-color: #413FC5;
    border-color: #3E3BBA;
    box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
  }
- 
+
  .button-20:active {
    background-color: #3E3BBA;
    background-image: none;
    border-color: #3A38AE;
    box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
  }
- 
+
  .button-20:active:focus {
    box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
  }
- 
+
  .button-20:disabled {
    background-image: none;
    box-shadow: none;
@@ -68,11 +68,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100000px;
+  height: 1000px;
   background-position: center;
-  position: relative;
+
 }
- 
+
  @media (max-width: 1100px){
   .button-20 {
     position: relative;
@@ -87,7 +87,7 @@ body {
     position: relative;
     left: 92%; transform: translateX(-3%),
     top 5%; transform: translateY(+5%);
-   
+
 }
       }
 
