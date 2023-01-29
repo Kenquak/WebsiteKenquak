@@ -17,11 +17,11 @@ NOTE:
 Replace the values below with your MYSQL database environment variables 
 to create a valid connection.
 ***/
-$db_host = "your_db_host";
-$db_username = "your_db_username";
-$db_password = "your_db_password";
-$db_name = "your_database";
-$db_table = "your_table";
+$db_host = "localhost";
+$db_username = "root";
+$db_password = "";
+$db_name = "mysql";
+$db_table = "user";
 
 // Taking all 5 values from the form data(input)
 
