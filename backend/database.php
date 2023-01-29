@@ -1,10 +1,5 @@
 <?php
 /***
-Display the data keys and values for debugging purposes.
-***/
-echo '<pre>', print_r($_POST, 1) , '</pre>';
-
-/***
 Test the data if it's a valid submission by checking the submission ID.
 ***/
 if (!isset($_POST['submission_id'])) {
@@ -86,4 +81,4 @@ else {
 }
 
 $mysqli->close();
-
+?>
