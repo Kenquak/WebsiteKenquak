@@ -12,7 +12,7 @@ NOTE:
 Replace the values below with your MYSQL database environment variables 
 to create a valid connection.
 ***/
-$db_host = "localhost";
+$db_host = "127.0.0.1:4242";
 $db_username = "root";
 $db_password = "";
 $db_name = "mysql";
