@@ -12,10 +12,10 @@ NOTE:
 Replace the values below with your MYSQL database environment variables 
 to create a valid connection.
 ***/
-$db_host = "127.0.0.1:4242";
-$db_username = "root";
-$db_password = "";
-$db_name = "mysql";
+$db_host = "sql.freedb.tech:3306";
+$db_username = "freedb_Vortex_Ole";
+$db_password = "!cG4Mh7WuyQHn#c";
+$db_name = "freedb_Website";
 $db_table = "user";
 
 // Taking all 5 values from the form data(input)
